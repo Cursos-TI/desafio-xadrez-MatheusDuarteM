@@ -15,7 +15,7 @@ int main()
         //iniciei a var de condição do switch
         int escolha;
         //fiz o menu para escolha no switch case
-        printf("Escolha com qual peça deseja movimentar: \n Digite 1 para torre \n Digite 2 para Bispo \n Digite 3 para Rainha \n Escolha: ");
+        printf("Escolha com qual peça deseja movimentar: \n Digite 1 para torre \n Digite 2 para Bispo \n Digite 3 para Rainha \n Digite 4 para Cavalo \n Escolha: ");
         scanf("%d",&escolha);
         switch(escolha){
             case 1://escolha para se for torre e definir o tanto que andaria
@@ -44,6 +44,18 @@ int main()
             {
                 printf("Rainha Movimenta na direção %s em %d de vezes \n",movimentar,w);
                 w++;
+            }
+                break;
+            case 4:
+            for(int k = 1; k < 3; k++)
+            {
+                printf("Cavalo movimenta para esquerda %d vezes \n",k);
+                int m = 1;
+                while( m < 3 )
+                {
+                    printf("Cavalo movimenta para baixo %d vezes \n",m);
+                    m++;
+                }
             }
                 break;
             default:
